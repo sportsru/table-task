@@ -1,0 +1,132 @@
+@font-face {
+	font-family: RobotoRegular; 
+	src: url(../fonts/RobotoRegular.ttf); 
+}
+
+@media (max-width: 620px), only screen and (max-device-width: 575px)  {
+	.main_table tr td:nth-last-of-type(2),
+	.main_table tr td:nth-last-of-type(3),
+	.table_footer span:last-of-type
+	{
+		display: none;
+	}
+}
+
+@media (max-width: 475px), only screen and (max-device-width: 475px)  {
+	.main_table tr td:nth-of-type(4),
+	.main_table tr td:nth-of-type(5),
+	.main_table tr td:nth-of-type(6),
+	.table_footer span:first-of-type
+	{
+		display: none;
+	}
+}
+
+body {
+	font-size: 10pt;
+	font-family: RobotoRegular, sans-serif;
+}
+
+.table_wrapper {
+	width: 100%;
+}
+
+.main_table {
+	width: 100%;
+	border-collapse: collapse;
+	border: 1px solid #d8d8d8;
+	margin-bottom: 5px;
+}
+
+.main_table a {
+	text-decoration: none;
+	color:#006496;
+}
+
+.main_table a:visited {
+	text-decoration: none;
+	color:#006496;
+}
+
+
+.main_table tr {
+	height: 32px;
+}
+
+.main_table tr td:first-of-type, .main_table tr td:nth-of-type(2) {
+	padding-left: 10px;
+}
+
+.main_table tr td:nth-of-type(n+3) {
+	padding-right: 10px;
+	text-align: right;
+}
+
+.main_table tr td:last-of-type {
+	background-color: #f9f9f7;
+}
+
+.main_table td {
+	border-top: 1px solid #d8d8d8;
+}
+
+.column col:not(:nth-of-type(2)) {
+	width: 50px;
+	border-left: none;
+	border-right: none;
+}
+
+.column col:first-of-type {
+	border-right: 1px solid #d8d8d8;
+	width: 40px;
+}
+
+.column col:nth-of-type(2) {
+	border-right: 1px solid #d8d8d8;
+	min-width: 150px;
+}
+
+.main_table .head_table {
+	font-weight: bold;
+	color: #006496;
+}
+
+.main_table .head_table td:nth-of-type(2) {
+	color: #000;
+}
+
+.main_table i.flag {
+	display: inline-block;
+	width: 16px;
+	height: 12px;
+	background: url(../img/flags.png) no-repeat;
+	background-position: -245px -75px;
+	margin-right: 4px;
+	vertical-align: top;
+}
+
+.team {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.team_col {
+	width: 137px;
+	line-height: 10pt;
+}
+
+.table_footer {
+	font-size: 8pt;
+}
+
+.color1 {
+	background-color: #7fd498;
+}
+
+.color2 {
+	background-color: #cceed6;
+}
+
+.color4 {
+	background-color: #ff99b1;
+}
